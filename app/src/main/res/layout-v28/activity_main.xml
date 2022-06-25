@@ -78,6 +78,19 @@
         app:layout_constraintEnd_toStartOf="@+id/endGuidline"
        />
     <TextView
+        android:id="@+id/bm_PhPass1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/karla"
+        android:text="@string/password"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/startGuidline"
+        app:layout_constraintTop_toBottomOf="@+id/bm_PhNumb_In"
+        />
+    <TextView
         android:id="@+id/bm_PhPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -90,6 +103,7 @@
         app:layout_constraintStart_toStartOf="@+id/startGuidline"
         app:layout_constraintTop_toBottomOf="@+id/bm_PhNumb_In"
        />
+
 
     <EditText
         style="@style/editText"
