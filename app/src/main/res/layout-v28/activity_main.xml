@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startGuidline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.038"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/endGuidline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.961"
+        />
+
+
+    <TextView
+        android:id="@+id/bm_Sign"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/karla"
+        android:text="@string/sign_into_your_account"
+        android:textColor="@color/sBlue"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="2.761"
+        app:layout_constraintStart_toStartOf="@+id/startGuidline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.586"
+         />
+
+    <TextView
+        android:id="@+id/bm_LogInto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/karla"
+        android:text="@string/log_into_your_bankme_account"
+        android:textColor="@color/bm_MuqLurji"
+        android:textSize="15sp"
+        app:layout_constraintDimensionRatio="12.739"
+        app:layout_constraintStart_toStartOf="@+id/startGuidline"
+        app:layout_constraintTop_toBottomOf="@id/bm_Sign"
+        app:layout_constraintWidth_percent="0.707"
+        />
+
+    <TextView
+        android:id="@+id/bm_PhNumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/karla"
+        android:text="@string/phone_number"
+        android:textColor="@color/bm_MuqLurji"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/startGuidline"
+        app:layout_constraintTop_toBottomOf="@+id/bm_LogInto" />
+
+    <EditText
+        android:id="@+id/bm_PhNumb_In"
+        style="@style/editText"
+        app:layout_constraintHeight_percent="0.058"
+        android:text="@string/ph_number"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/bm_PhNumb"
+        app:layout_constraintStart_toStartOf="@id/startGuidline"
+        app:layout_constraintEnd_toStartOf="@+id/endGuidline"
+       />
+    <TextView
+        android:id="@+id/bm_PhPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/karla"
+        android:text="@string/password"
+        android:textColor="@color/bm_MuqLurji"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/startGuidline"
+        app:layout_constraintTop_toBottomOf="@+id/bm_PhNumb_In"
+       />
+
+    <EditText
+        style="@style/editText"
+        android:id="@+id/bm_PhPass_In"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHeight_percent="0.058"
+        android:background="@drawable/text_enter_shape"
+        android:text="@string/ent_pass"
+        app:layout_constraintTop_toBottomOf="@id/bm_PhPass"
+        app:layout_constraintStart_toStartOf="@id/startGuidline"
+        app:layout_constraintEnd_toStartOf="@+id/endGuidline"
+        />
+    <TextView
+        android:id="@+id/bm_PassRecover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/karla"
+        android:textColor="@color/bm_MuqLurji"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowRadius="4"
+        android:shadowDy="4"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/bm_RecovText"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.623"
+        app:layout_constraintDimensionRatio="5.608"
+        app:layout_constraintStart_toStartOf="@id/startGuidline"
+        app:layout_constraintTop_toBottomOf="@+id/bm_PhPass_In"
+        />
+
+    <Button
+        android:id="@+id/bm_LogInButt"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/karla"
+        android:backgroundTint="#0066F6"
+        android:text="@string/bm_LogIn_Text"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bm_SignUp"
+        app:layout_constraintEnd_toStartOf="@+id/endGuidline"
+        app:layout_constraintStart_toStartOf="@+id/startGuidline" />
+    <TextView
+        android:id="@+id/bm_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karla"
+        android:textSize="15sp"
+        android:text="@string/bm_signup"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/startGuidline"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

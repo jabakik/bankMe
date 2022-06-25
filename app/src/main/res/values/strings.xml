@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">bankMe</string>
+    <string name="sign_into_your_account">Sign into your Account</string>
+    <string name="log_into_your_bankme_account">Log into your BankMe account</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="ent_pass">*********</string>
+    <string name="bm_RecovText">Have you forgotten your password? <a href="" >click here to recover it</a></string>
+    <string name="bm_LogIn_Text">Log in</string>
+    <string name="bm_signup">Do you not have a BankMe account? Sign up here</string>
+    <string name="bm_userHello">Hello Joseph</string>
+    <string name="bm_greeting">Good morning, remember to save today</string>
+    <string name="total_savings">Total Savings</string>
+    <string name="Money_On">N50,000.10</string>
+    <string name="add_money">Add money</string>
+    <string name="Withdrow">Withdrow</string>
+    <string name="ph_number">+234 554 345 343</string>
+    <string name="GetMoneyText">Get your money working for you</string>
+    <string name="money_weys">Get your money working for you</string>
+    <string name="ways_text">Ways to earn more money</string>
+    <string name="save_for">Save for an emergency</string>
+    <string name="invest_your_money">Invest your money</string>
+    <string name="invite_friends">Invite your friends and get a bonus</string>
+</resources>

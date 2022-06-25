@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="backgroud_radius">8dp</dimen>
+    <dimen name="text_enter_radius">8dp</dimen>
+</resources>
